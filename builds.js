@@ -6,11 +6,11 @@
 
 const BUILD_DATA = [
     {
-        poster: "builds/poster1.jpg",
-        name: "Пример сборки",
-        version: "v1.0.0",
-        description: "Краткое описание конфигурации. Замените текст на актуальный.",
-        downloadUrl: "https://example.com/download"
+        poster: "builds/0001.jpg",
+        name: "Don’t Look Behind ",
+        version: "v1.20.1 Forge",
+        description: "Это не просто хоррор-сборка. Это медленное, давящее погружение в паранойю, где страх рождается не от скримеров… а от ощущения, что за вами наблюдают. Вы будете слышать то, чего нет, видеть то, что исчезает, сомневаться в каждом звуке и никогда не чувствовать себя в безопасности.",
+        downloadUrl: "https://minecraft-inside.ru/out/aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xRkhsQ2o4MnJLdVFlRG9pZDZJdE5pRmFOZ19RTTA0NVQvdmlldz91c3A9c2hhcmluZw,,"
     }
 ];
 
