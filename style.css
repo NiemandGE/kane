@@ -23,14 +23,6 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     line-height: 1.5;
-    /* Запрет выделения текста для защиты от копирования */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* Запрет перетаскивания */
-    -webkit-user-drag: none;
-    user-drag: none;
 }
 
 /* === СТЕКЛЯННЫЕ ПАНЕЛИ (Glassmorphism) === */
@@ -253,8 +245,7 @@ body {
     display: inline-block;
     font-size: 0.75rem;
     padding: 0.2rem 0.6rem;
-    /* ИЗМЕНЕНИЕ: Лаймовый цвет фона */
-    background: rgba(50, 205, 50, 0.2); 
+    background: rgba(168, 85, 247, 0.2);
     border-radius: 6px;
     color: var(--text-secondary);
     margin-bottom: 0.8rem;
