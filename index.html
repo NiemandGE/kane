@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейн — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="builds.html" class="nav-link">Сборки</a>
+    </nav>
+
+    <main class="profile-container">
+        <div class="avatar-wrapper">
+            <!-- Замените путь к изображению на свой аватар -->
+            <img src="avatar.jpg" alt="Аватар" class="avatar">
+        </div>
+
+        <h1 class="username">Кейн</h1>
+
+        <div class="status-badge" id="status-badge">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="status-text" id="status-text">Загрузка...</span>
+        </div>
+
+        <p class="description">
+            Здесь будет ваше описание. Замените этот текст на свой.
+        </p>
+
+        <div class="social-links">
+            <a href="https://t.me/ваш_username" target="_blank" class="social-link telegram">
+                <i class="fa-brands fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://www.tiktok.com/@ваш_username" target="_blank" class="social-link tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            <a href="https://twitter.com/ваш_username" target="_blank" class="social-link twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="https://www.youtube.com/@ваш_username" target="_blank" class="social-link youtube">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // ====== РУЧНАЯ НАСТРОЙКА СТАТУСА ======
+        // Telegram не предоставляет API для автоматического получения статуса.
+        // Измените значение вручную: 'online' или 'offline'.
+        const CURRENT_STATUS = 'online'; // 'online' | 'offline'
+
+        const statusDot = document.getElementById('status-dot');
+        const statusText = document.getElementById('status-text');
+
+        if (CURRENT_STATUS === 'online') {
+            statusDot.className = 'status-dot online';
+            statusText.textContent = 'В сети';
+        } else {
+            statusDot.className = 'status-dot offline';
+            statusText.textContent = 'Не в сети';
+        }
+    </script>
+</body>
+</html>
