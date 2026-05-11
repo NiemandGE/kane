@@ -1,14 +1,8 @@
-/**
- * Файл управления игровыми сборками.
- * Для добавления новой сборки внесите объект в массив BUILD_DATA.
- * Обязательные поля: poster, name, version, description, downloadUrl
- */
-
 const BUILD_DATA = [
     {
         poster: "builds/0001.jpg",
         name: "Don’t Look Behind ",
-        version: "v1.20.1 Forge",
+        version: "1.20.1 - Forge",
         description: "Это не просто хоррор-сборка. Это медленное, давящее погружение в паранойю, где страх рождается не от скримеров… а от ощущения, что за вами наблюдают. Вы будете слышать то, чего нет, видеть то, что исчезает, сомневаться в каждом звуке и никогда не чувствовать себя в безопасности.",
         downloadUrl: "https://minecraft-inside.ru/out/aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xRkhsQ2o4MnJLdVFlRG9pZDZJdE5pRmFOZ19RTTA0NVQvdmlldz91c3A9c2hhcmluZw,,"
     }
@@ -23,7 +17,6 @@ function renderBuilds() {
     BUILD_DATA.forEach(function(build, index) {
         const card = document.createElement('div');
         card.className = 'build-card';
-        // Задержка анимации для последовательного появления
         card.style.animationDelay = `${index * 0.1}s`;
 
         card.innerHTML =
