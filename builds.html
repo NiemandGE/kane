@@ -19,37 +19,10 @@
     <main class="builds-container">
         <h1 class="page-title">Игровые сборки</h1>
         <div id="builds-grid" class="builds-grid">
-            <!-- Сборки генерируются через builds.js -->
+            <!-- Сборки будут добавлены через builds.js -->
         </div>
     </main>
 
-    <!-- Модальное окно подробной информации -->
-    <div id="build-modal" class="modal-overlay">
-        <div class="modal-content glass-panel">
-            <button class="modal-close" aria-label="Закрыть модальное окно">&times;</button>
-            <img id="modal-poster" src="" alt="" class="modal-poster">
-            <h2 id="modal-title" class="modal-title"></h2>
-            <div class="modal-badges">
-                <span id="modal-version" class="modal-badge"></span>
-                <span id="modal-platform" class="modal-badge"></span>
-            </div>
-            <p id="modal-description" class="modal-description"></p>
-            <a id="modal-download" href="#" target="_blank" rel="noopener noreferrer" class="build-download">Скачать</a>
-        </div>
-    </div>
-
     <script src="builds.js"></script>
-
-    <!-- Скрипт антикопирования -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.addEventListener('contextmenu', e => e.preventDefault());
-            document.addEventListener('keydown', function(e) {
-                if (e.ctrlKey && ['c','x','v','u','s','C','X','V','U','S'].includes(e.key)) e.preventDefault();
-                if (e.key === 'F12') e.preventDefault();
-            });
-            document.addEventListener('dragstart', e => e.preventDefault());
-        });
-    </script>
 </body>
 </html>
