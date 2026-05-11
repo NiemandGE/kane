@@ -19,10 +19,39 @@
     <main class="builds-container">
         <h1 class="page-title">Игровые сборки</h1>
         <div id="builds-grid" class="builds-grid">
-            <!-- Сборки будут добавлены через builds.js -->
         </div>
     </main>
 
     <script src="builds.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.ctrlKey && 
+                (e.key === 'c' || e.key === 'C' || 
+                 e.key === 'x' || e.key === 'X' || 
+                 e.key === 'v' || e.key === 'V' || 
+                 e.key === 'u' || e.key === 'U' || 
+                 e.key === 's' || e.key === 'S')
+            ) {
+                e.preventDefault();
+                return false;
+            }
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    });
+</script>
 </body>
 </html>
